@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-16_19-48-47",
+            "content": "@@ -1,12 +0,0 @@\n-print (%22oi%22)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-16_20-04-16",
+            "content": "@@ -1,228 +1,12 @@\n-class Toalha:%0A    def __init__ (self):%0A        self.color = %22pink%22%0A        self.size = %22m%22%0A        self.wetness = 0%0A%0Atoalha = Toalha()%0Atoalha.color = %22white%22 #rosa%0Aprint (toalha.color) %0Aprint (toalha.size)%0Aprint (toalha.wetness\n+print (%22oi%22\n )\n",
+            "lines": "1"
+        },
+        {
+            "label": "2025-09-16_20-10-53",
+            "content": "class Toalha:\n    def __init__ (self):\n        self.color = \"pink\"\n        self.size = \"m\"\n        self.wetness = 0\n\ntoalha = Toalha()\ntoalha.color = \"white\" #rosa\nprint (toalha.color) \nprint (toalha.size)\nprint (toalha.wetness)",
+            "lines": "11"
+        }
+    ]
+}
