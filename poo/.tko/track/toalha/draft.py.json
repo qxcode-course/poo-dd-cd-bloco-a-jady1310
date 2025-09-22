@@ -12,8 +12,58 @@
         },
         {
             "label": "2025-09-16_20-10-53",
-            "content": "class Toalha:\n    def __init__ (self):\n        self.color = \"pink\"\n        self.size = \"m\"\n        self.wetness = 0\n\ntoalha = Toalha()\ntoalha.color = \"white\" #rosa\nprint (toalha.color) \nprint (toalha.size)\nprint (toalha.wetness)",
+            "content": "@@ -35,20 +35,8 @@\n lf):\n- #construtor\n %0A   \n@@ -63,19 +63,8 @@\n ink%22\n- #atributos\n %0A   \n@@ -114,111 +114,8 @@\n  0%0A%0A\n-    def __str__ (self):%0A        return f%22color: %7Bself.color%7D, tam: %7Bself.size%7D, hum: %7Bself.wetness%7D%22%0A%0A%0A\n toal\n@@ -131,17 +131,8 @@\n ha()\n- #objetos\n %0Atoa\n@@ -156,34 +156,11 @@\n e%22 #\n-ela era rosa e ficou branc\n+ros\n a%0Apr\n",
             "lines": "11"
+        },
+        {
+            "label": "2025-09-22_18-44-32",
+            "content": "@@ -33,31 +33,8 @@\n self\n-, color: str, size: str\n ): #\n@@ -66,20 +66,17 @@\n olor\n-: str= color\n+ = %22pink%22\n  #at\n@@ -104,21 +104,14 @@\n size\n-: str = size \n+ = %22m%22\n %0A   \n@@ -127,21 +127,16 @@\n .wetness\n-: int\n  = 0%0A%0A  \n@@ -145,583 +145,242 @@\n def \n-dry(self, amount: int) -%3E None:%0A        self .wetness += amount%0A        if self.wetness %3E= self.getMaxWetness():%0A            print(%22toalha encharcada%22)%0A            \n+__str__ (self):%0A        return f%22color: %7Bself.color%7D, tam: %7Bself.size%7D, hum: %7B\n self.\n- \n wetness\n- = self .getMaxWetness()%0A%0A    def getMaxWetness (self) -%3E int:%0A        if self .size == %22P%22:%0A            return 10 %0A        if self .size == %22M%22:%0A            return 20%0A        if self .size == %22G%22:%0A            return 30%0A        return 0%0A    %0A    def __str__ (self) -%3E str:%0A        return f%22Cor:%7Bself .color%7D, Tam:%7Bself .size%7D, Umidade:%7Bself .wetness%7D%22%0A%0Adoguito = Towel(%22velha%22, %22M%22)%0Aprint (doguito)%0A%0A%0A%0A\n+%7D%22%0A%0A%0Atoalha = Toalha() #objetos%0Atoalha.color = %22white%22 #ela era rosa e ficou branca%0Aprint (toalha.color) %0Aprint (toalha.size)%0Aprint (toalha.wetness)\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-09-22_19-07-46",
+            "content": "@@ -721,21 +721,19 @@\n ito = To\n-alha \n+wel\n (%22velha%22\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-09-22_19-08-07",
+            "content": "@@ -761,38 +761,7 @@\n to)%0A\n-doguito.dry(10)%0Aprint(doguito) \n %0A%0A%0A\n",
+            "lines": "29"
+        },
+        {
+            "label": "2025-09-22_19-08-37",
+            "content": "@@ -793,37 +793,6 @@\n o) %0A\n-doguito.dry(50)%0Aprint(doguito)%0A\n %0A%0A\n",
+            "lines": "30"
+        },
+        {
+            "label": "2025-09-22_19-09-31",
+            "content": "@@ -801,17 +801,17 @@\n ito.dry(\n-3\n+5\n 0)%0Aprint\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-22_19-09-43",
+            "content": "@@ -741,10 +741,9 @@\n %22, %22\n-XG\n+M\n %22)%0Ap\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-22_19-10-03",
+            "content": "@@ -737,17 +737,18 @@\n elha%22, %22\n-P\n+XG\n %22)%0Aprint\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-22_19-10-20",
+            "content": "@@ -737,17 +737,17 @@\n elha%22, %22\n-M\n+P\n %22)%0Aprint\n@@ -805,9 +805,10 @@\n dry(\n-5\n+30\n )%0Apr\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-22_19-21-15",
+            "content": "@@ -714,30 +714,14 @@\n %22%0A%0Ad\n-ef main ():%0A    toalha\n+oguito\n  = T\n@@ -732,154 +732,97 @@\n a (%22\n+velha\n %22, %22\n+M\n %22)%0A\n-    while True:%0A        line: str = input()%0A        args: list%5Bstr%5D = line.split(%22 %22)%0A        if args%5B0%5D == %22end%22:%0A            break%0A        \n+print (doguito)%0Adoguito.dry(10)%0Aprint(doguito) %0Adoguito.dry(5)%0Aprint(doguito)%0A\n %0A%0A\n",
+            "lines": "32"
+        },
+        {
+            "label": "2025-09-22_19-41-13",
+            "content": "class Toalha:\n    def __init__ (self, color: str, size: str): #construtor\n        self.color: str= color #atributos\n        self.size: str = size \n        self.wetness: int = 0\n\n    def dry(self, amount: int) -> None:\n        self .wetness += amount\n        if self.wetness >= self.getMaxWetness():\n            print(\"toalha encharcada\")\n            self. wetness = self .getMaxWetness()\n\n    def getMaxWetness (self) -> int:\n        if self .size == \"P\":\n            return 10 \n        if self .size == \"M\":\n            return 20\n        if self .size == \"G\":\n            return 30\n        return 0\n    \n    def __str__ (self) -> str:\n        return f\"Cor:{self .color}, Tam:{self .size}, Umidade:{self .wetness}\"\n\ndef main ():\n    toalha = Toalha (\"\", \"\")\n    while True:\n        line: str = input()\n        args: list[str] = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        \n\n",
+            "lines": "33"
         }
     ]
 }
