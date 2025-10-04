@@ -1,0 +1,19 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-04_23-34-06",
+            "content": "@@ -1027,87 +1027,8 @@\n 0%5D:%0A\n-            case %22init%22:%0A                calculadora.batteryMax = int(args%5B1%5D)%0A\n     \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-04_23-35-59",
+            "content": "@@ -1106,91 +1106,8 @@\n 1%5D)%0A\n-                calculadora.battery = 0%0A                calculadora.display = 0.00%0A\n     \n",
+            "lines": "52"
+        },
+        {
+            "label": "2025-10-04_23-38-00",
+            "content": "class Calculadora:\n    def __init__(self, batteryMax:int):\n        self.batteryMax=batteryMax\n        self.battery=0\n        self.display=0.00\n    def __str__(self):\n        return (f\"display = {self.display:.2f}, battery = {self.battery}\")\n    def charge (self, value:int):\n        self.battery += value\n        if self.battery > self.batteryMax:\n            self.battery = self.batteryMax\n    def sum(self, a, b):\n        if self.battery == 0:\n            print(\"fail: bateria insuficiente\")\n        else:\n            self.display=a+b\n            self.battery -=1\n    def division(self, num:int, den:int):\n        if self.battery == 0:\n            print(\"fail: bateria insuficiente\")\n        elif den ==0:\n            print(\"fail: divisao por zero\")\n            self.battery -=1\n        else:\n            self.display= num/den\n            self.battery -=1\ndef main():\n    calculadora = Calculadora (0)\n    while True:\n        line=input()\n        args:list[str]=line.split(\" \")\n        print(f\"${line}\")\n\n        match args[0]:\n            case \"init\":\n                calculadora.batteryMax = int(args[1])\n                calculadora.battery = 0\n                calculadora.display = 0.00\n            case \"show\":\n                print(calculadora)\n            case \"charge\":\n                calculadora.charge(int(args[1]))\n            case \"sum\":\n                calculadora.sum(int(args[1]), int(args[2]))\n            case \"div\":\n                calculadora.division(int(args[1]), int(args[2]))\n            case \"end\":\n                break\n            case _:\n                print(\"comando invalido\")\nmain()\n\n\n\n",
+            "lines": "54"
+        }
+    ]
+}

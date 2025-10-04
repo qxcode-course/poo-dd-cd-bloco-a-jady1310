@@ -1,0 +1,109 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-04_19-25-34",
+            "content": "@@ -223,9 +223,37 @@\n %7D%22%0A    %0A\n-%0A\n+    def __name__ ==%22__main__%22\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-04_19-32-40",
+            "content": "@@ -226,149 +226,6 @@\n     \n-%0A    def __str__(self, increment: int):%0A        if self.age %3E= 4:%0A            print(f%22aviso:%7Bself.species%7D morreu%22)%0A            return%0A        \n %0A%0A\n",
+            "lines": "10"
+        },
+        {
+            "label": "2025-10-04_19-54-00",
+            "content": "@@ -235,13 +235,15 @@\n def \n-ageBy\n+__str__\n (sel\n@@ -369,205 +369,6 @@\n     \n-self.age += increment%0A        if self.age %3E= 4:%0A            self.age = 4%0A            print(f%22aviso:%7Bself.species%7D morreu%22)%0A%0Aif __name__ = %22__main__%22:%0A    dog=animal (%22Cachorro%22, %22auau%22)%0A%0A    print(dog)\n+%0A%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-10-04_20-03-35",
+            "content": "@@ -491,179 +491,81 @@\n %22)%0A%0A\n-    def makeSound(self):%0A        if self.sound ==0\n+if __name__ = %22__main__%22\n :%0A    \n- \n-       return '---'%0A        elif self.sound ==4:%0A            return %22RIP%22%0A        else:%0A            return self.sound%0A\n+dog=animal (%22Cachorro%22, %22auau%22)%0A%0A    print(dog)\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-10-04_20-07-55",
+            "content": "@@ -298,39 +298,37 @@\n         print(f%22\n-warning\n+aviso\n :%7Bself.species%7D \n@@ -460,15 +460,13 @@\n t(f%22\n-warning\n+aviso\n :%7Bse\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-04_20-08-41",
+            "content": "@@ -1,15 +1,15 @@\n class \n-A\n+a\n nimal:%0A \n@@ -670,542 +670,4 @@\n und%0A\n-def main():%0A    animal= None (%22 %22,%22 %22)%0A    while True:%0A        line: str=input()%0A        args:list%5Bstr%5D = line.split (%22 %22)%0A%0A    if args%5B0%5D == %22end%22:%0A        break%0A    elif args%5B0%5D == %22init%22:%0A        species = args%5B1%5D%0A        sound = args%5B2%5D%0A        animal = Animal(species, sound)%0A    elif args%5B0%5D== %22show%22:%0A        print(animal)%0A    elif args%5B0%5D == %22grow%22:%0A        increment = int(args%5B1%5D)%0A        animal.ageBy(increment)%0A    elif args%5B0%5D == %22noise%22:%0A        print(Animal.makeSound)%0A    else:%0A        print(%22Comando invalido%22)%0Amain()%0A%0A%0A%0A\n",
+            "lines": "25"
+        },
+        {
+            "label": "2025-10-04_20-58-42",
+            "content": "@@ -790,20 +790,16 @@\n  (%22 %22)%0A%0A\n-    \n     if a\n@@ -815,20 +815,16 @@\n  %22end%22:%0A\n-    \n         \n@@ -829,20 +829,16 @@\n   break%0A\n-    \n     elif\n@@ -865,20 +865,16 @@\n         \n-   \n- \n species \n@@ -891,20 +891,16 @@\n         \n-    \n sound = \n@@ -911,28 +911,24 @@\n %5B2%5D%0A        \n-   \n- \n animal = Ani\n@@ -943,28 +943,24 @@\n ies, sound)%0A\n-    \n     elif arg\n@@ -978,28 +978,24 @@\n w%22:%0A        \n-  \n-  \n print(animal\n@@ -996,20 +996,16 @@\n animal)%0A\n-    \n     elif\n@@ -1032,20 +1032,16 @@\n         \n-  \n-  \n incremen\n@@ -1061,28 +1061,24 @@\n 1%5D)%0A        \n-    \n animal.ageBy\n@@ -1089,28 +1089,24 @@\n rement)%0A    \n- \n-   \n elif args%5B0%5D\n@@ -1122,28 +1122,24 @@\n e%22:%0A        \n-    \n print(Animal\n@@ -1150,38 +1150,30 @@\n eSound)%0A    \n- \n-   \n else:%0A\n-    \n         prin\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-04_21-00-30",
+            "content": "@@ -695,16 +695,25 @@\n l= None \n+(%22 %22,%22 %22)\n %0A    whi\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-04_21-01-00",
+            "content": "@@ -202,17 +202,18 @@\n elf.age%7D\n-:\n+, \n %7Bself.so\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-04_21-02-05",
+            "content": "@@ -191,16 +191,17 @@\n pecies%7D:\n+ \n %7Bself.ag\n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-04_21-02-29",
+            "content": "@@ -216,17 +216,16 @@\n sound%7D%22%0A\n-%0A\n     %0A   \n",
+            "lines": "50"
+        },
+        {
+            "label": "2025-10-04_21-04-22",
+            "content": "@@ -691,16 +691,15 @@\n imal\n- \n = None\n-%0A\n+ \n %0A   \n@@ -723,115 +723,48 @@\n     \n-try:%0A            line = input().strip()%0A            if not line:%0A                continue%0A%0A            args\n+line: str=input()%0A        args:list%5Bstr%5D\n  = l\n@@ -776,16 +776,16 @@\n plit\n-()%0A%0A    \n+ (%22 %22)%0A%0A\n     \n@@ -803,17 +803,16 @@\n %5B0%5D == %22\n-$\n end%22:%0A  \n@@ -825,23 +825,14 @@\n     \n-    \n break%0A\n-%0A    \n     \n@@ -856,20 +856,15 @@\n == %22\n-$\n init%22:%0A\n-    \n     \n@@ -901,20 +901,16 @@\n         \n-   \n- \n sound = \n@@ -917,20 +917,16 @@\n args%5B2%5D%0A\n-    \n         \n@@ -961,28 +961,24 @@\n  sound)%0A\n-%0A   \n         \n  elif ar\n@@ -961,33 +961,32 @@\n  sound)%0A        \n- \n elif args%5B0%5D == \n@@ -981,22 +981,20 @@\n  args%5B0%5D\n- \n == %22\n-$\n show%22:%0A \n@@ -1008,140 +1008,22 @@\n     \n-    if animal:%0A                    print(animal)%0A                else:%0A                    print(%22Nenhum animal inicializado%22)%0A%0A    \n+print(animal)%0A\n     \n@@ -1047,51 +1047,15 @@\n == %22\n-$\n grow%22:%0A\n-                if animal:%0A        \n     \n@@ -1095,32 +1095,24 @@\n             \n-       \n- \n animal.ageBy\n@@ -1127,91 +1127,8 @@\n nt)%0A\n-                else:%0A                    print(%22Nenhum animal inicializado%22)%0A%0A    \n     \n@@ -1152,17 +1152,16 @@\n == %22\n-$\n noise%22:%0A\n     \n@@ -1160,43 +1160,8 @@\n e%22:%0A\n-                if animal:%0A        \n     \n@@ -1170,25 +1170,25 @@\n       print(\n-a\n+A\n nimal.makeSo\n@@ -1194,25 +1194,18 @@\n ound\n-())%0A     \n+)%0A\n         \n    e\n@@ -1204,96 +1204,14 @@\n     \n-   \n else:%0A\n-                    print(%22Nenhum animal inicializado%22)%0A%0A            else:%0A    \n     \n@@ -1240,59 +1240,15 @@\n  inv\n-%C3%A1\n+a\n lido%22)\n-%0A%0A        except EOFError:%0A            break\n %0Amai\n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-04_21-05-53",
+            "content": "@@ -691,15 +691,16 @@\n imal\n+ \n = None\n- \n+%0A\n %0A   \n@@ -724,48 +724,115 @@\n     \n-line: str=input()%0A        args:list%5Bstr%5D\n+try:%0A            line = input().strip()%0A            if not line:%0A                continue%0A%0A            args\n  = l\n@@ -844,16 +844,16 @@\n plit\n- (%22 %22)%0A%0A\n+()%0A%0A    \n     \n@@ -871,16 +871,17 @@\n %5B0%5D == %22\n+$\n end%22:%0A  \n@@ -894,14 +894,23 @@\n     \n+    \n break%0A\n+%0A    \n     \n@@ -934,15 +934,20 @@\n == %22\n+$\n init%22:%0A\n+    \n     \n@@ -984,16 +984,20 @@\n         \n+   \n+ \n sound = \n@@ -1004,16 +1004,20 @@\n args%5B2%5D%0A\n+    \n         \n@@ -1052,24 +1052,28 @@\n  sound)%0A\n+%0A   \n         \n elif arg\n@@ -1056,32 +1056,33 @@\n nd)%0A%0A           \n+ \n elif args%5B0%5D== %22\n@@ -1077,20 +1077,22 @@\n  args%5B0%5D\n+ \n == %22\n+$\n show%22:%0A \n@@ -1106,22 +1106,140 @@\n     \n-print(animal)%0A\n+    if animal:%0A                    print(animal)%0A                else:%0A                    print(%22Nenhum animal inicializado%22)%0A%0A    \n     \n@@ -1263,15 +1263,51 @@\n == %22\n+$\n grow%22:%0A\n+                if animal:%0A        \n     \n@@ -1347,24 +1347,32 @@\n             \n+       \n+ \n animal.ageBy\n@@ -1383,16 +1383,99 @@\n rement)%0A\n+                else:%0A                    print(%22Nenhum animal inicializado%22)%0A%0A    \n         \n@@ -1495,16 +1495,17 @@\n == %22\n+$\n noise%22:%0A\n     \n@@ -1500,16 +1500,51 @@\n noise%22:%0A\n+                if animal:%0A        \n         \n@@ -1553,17 +1553,17 @@\n   print(\n-A\n+a\n nimal.ma\n@@ -1569,26 +1569,33 @@\n akeSound\n-)%0A\n+())%0A     \n         \n else:%0A  \n@@ -1578,38 +1578,120 @@\n ))%0A             \n+   \n else:%0A\n+                    print(%22Nenhum animal inicializado%22)%0A%0A            else:%0A    \n             prin\n@@ -1708,15 +1708,59 @@\n  inv\n-a\n+%C3%A1\n lido%22)\n+%0A%0A        except EOFError:%0A            break\n %0Amai\n",
+            "lines": "73"
+        },
+        {
+            "label": "2025-10-04_21-06-23",
+            "content": "@@ -263,38 +263,8 @@\n t):%0A\n-        self.age += increment%0A\n     \n@@ -313,17 +313,16 @@\n warning:\n- \n %7Bself.sp\n@@ -353,132 +353,22 @@\n     \n-self.age=4%0A        %0A        # if self.age %3E= 4:%0A        #     print(f%22warning:%7Bself.species%7D morreu%22)%0A            %0A        #\n+return%0A       \n  sel\n@@ -393,18 +393,16 @@\n %0A       \n- #\n  if self\n@@ -415,26 +415,24 @@\n = 4:%0A       \n- #\n      self.ag\n@@ -448,10 +448,8 @@\n     \n- #\n     \n@@ -693,25 +693,13 @@\n al= \n-Animal (%22 %22, %22 %22)\n+None \n %0A   \n@@ -782,34 +782,8 @@\n %22 %22)\n-%0A        print(f%22$%7Bline%7D%22)\n %0A%0A  \n",
+            "lines": "51"
+        },
+        {
+            "label": "2025-10-04_21-25-06",
+            "content": "@@ -714,32 +714,34 @@\n n '---'%0A        \n+el\n if self.sound ==\n@@ -768,16 +768,34 @@\n n %22RIP%22%0A\n+        else:%0A    \n         \n",
+            "lines": "57"
+        },
+        {
+            "label": "2025-10-04_21-26-28",
+            "content": "@@ -1335,25 +1335,25 @@\n       print(\n-a\n+A\n nimal.makeSo\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-04_21-26-56",
+            "content": "@@ -1036,23 +1036,16 @@\n         \n-animal.\n species \n@@ -1066,23 +1066,16 @@\n         \n-animal.\n sound = \n@@ -1093,18 +1093,16 @@\n         \n- #\n  animal \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-04_21-27-51",
+            "content": "@@ -1371,18 +1371,16 @@\n akeSound\n-()\n )%0A      \n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-04_21-32-11",
+            "content": "@@ -678,19 +678,21 @@\n if self.\n-age\n+sound\n  ==0:%0A  \n@@ -730,19 +730,21 @@\n if self.\n-age\n+sound\n  ==4:%0A  \n@@ -786,19 +786,21 @@\n rn self.\n-age\n+sound\n %0Adef mai\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-04_21-33-00",
+            "content": "@@ -782,21 +782,19 @@\n rn self.\n-sound\n+age\n %0Adef mai\n",
+            "lines": "56"
+        },
+        {
+            "label": "2025-10-04_21-33-21",
+            "content": "class Animal:\n    def __init__(self, species: str, sound:str):\n        self.species = species\n        self.sound = sound\n        self.age = 0\n\n    def __str__(self):\n        return f\"{self.species}:{self.age}:{self.sound}\"\n\n    \n    def ageBy(self, increment: int):\n        self.age += increment\n        if self.age >= 4:\n            print(f\"warning: {self.species} morreu\")\n            self.age=4\n        \n        # if self.age >= 4:\n        #     print(f\"warning:{self.species} morreu\")\n            \n        # self.age += increment\n        # if self.age >= 4:\n        #     self.age = 4\n        #     print(f\"warning:{self.species} morreu\")\n\n    def makeSound(self):\n        if self.age ==0:\n            return '---'\n        if self.age ==4:\n            return \"RIP\"\n        return self.sound\ndef main():\n    animal= Animal (\" \", \" \")\n    while True:\n        line: str=input()\n        args:list[str] = line.split (\" \")\n        print(f\"${line}\")\n\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            animal.species = args[1]\n            animal.sound = args[2]\n            # animal = Animal(species, sound)\n        elif args[0]== \"show\":\n            print(animal)\n        elif args[0] == \"grow\":\n            increment = int(args[1])\n            animal.ageBy(increment)\n        elif args[0] == \"noise\":\n            print(animal.makeSound())\n        else:\n            print(\"Comando invalido\")\nmain()\n\n\n\n",
+            "lines": "56"
+        }
+    ]
+}

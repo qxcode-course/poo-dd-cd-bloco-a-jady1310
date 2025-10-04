@@ -9,11 +9,16 @@ expanded:
 - bloco_a-configuração-de-ambiente
 - campanha-principal
 - bloco_b-primeiras-classes
-tasks: {}
+tasks:
+  toalha: '{rate:100, guide:s, alone:10, study:90}'
+  animal: '{rate:100, human:s, alone:6, study:150}'
+  carro: '{rate:100, human:s, alone:5, study:30}'
+  calculadora: '{rate:100, human:s, alone:5, study:50}'
+  enxugar: '{rate:100, human:s, guide:s, alone:4, study:150}'
 flags:
   quests: 0
   tracks: 0
   tasks: 0
-  graph: 0
+  graph: 1
   xray: 0
-index: bloco_b-primeiras-classes
+index: calculadora
